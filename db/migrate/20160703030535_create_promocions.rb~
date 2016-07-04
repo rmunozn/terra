@@ -1,0 +1,8 @@
+class CreatePromocions < ActiveRecord::Migration
+  def change
+    create_table :promocions do |t|
+
+      t.timestamps null: false
+    end
+  end
+end
