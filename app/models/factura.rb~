@@ -1,3 +1,3 @@
 class Factura < ActiveRecord::Base
-    belongs_to :Cliente	
+    belongs_to :cliente	
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160703040503) do
+ActiveRecord::Schema.define(version: 20160707000742) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,9 +34,16 @@ ActiveRecord::Schema.define(version: 20160703040503) do
   end
 
   create_table "eleccions", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.integer  "masa_id"
+    t.integer  "ingrediente_id"
+    t.integer  "tamano_id"
   end
+
+  add_index "eleccions", ["ingrediente_id"], name: "index_eleccions_on_ingrediente_id", using: :btree
+  add_index "eleccions", ["masa_id"], name: "index_eleccions_on_masa_id", using: :btree
+  add_index "eleccions", ["tamano_id"], name: "index_eleccions_on_tamano_id", using: :btree
 
   create_table "extras", force: :cascade do |t|
     t.text     "descripcion"
@@ -50,9 +57,11 @@ ActiveRecord::Schema.define(version: 20160703040503) do
     t.datetime "updated_at", null: false
     t.integer  "precio"
     t.integer  "cliente_id"
+    t.integer  "pedido_id"
   end
 
   add_index "facturas", ["cliente_id"], name: "index_facturas_on_cliente_id", using: :btree
+  add_index "facturas", ["pedido_id"], name: "index_facturas_on_pedido_id", using: :btree
 
   create_table "ingredientes", force: :cascade do |t|
     t.text     "descripcion"
@@ -69,10 +78,19 @@ ActiveRecord::Schema.define(version: 20160703040503) do
   end
 
   create_table "pedidos", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
     t.text     "estado"
+    t.integer  "eleccion_id"
+    t.integer  "tipo_id"
+    t.integer  "promocion_id"
+    t.integer  "extra_id"
   end
+
+  add_index "pedidos", ["eleccion_id"], name: "index_pedidos_on_eleccion_id", using: :btree
+  add_index "pedidos", ["extra_id"], name: "index_pedidos_on_extra_id", using: :btree
+  add_index "pedidos", ["promocion_id"], name: "index_pedidos_on_promocion_id", using: :btree
+  add_index "pedidos", ["tipo_id"], name: "index_pedidos_on_tipo_id", using: :btree
 
   create_table "promocions", force: :cascade do |t|
     t.integer  "numero"
@@ -97,5 +115,13 @@ ActiveRecord::Schema.define(version: 20160703040503) do
     t.datetime "updated_at",  null: false
   end
 
+  add_foreign_key "eleccions", "ingredientes"
+  add_foreign_key "eleccions", "masas"
+  add_foreign_key "eleccions", "tamanos"
   add_foreign_key "facturas", "clientes"
+  add_foreign_key "facturas", "pedidos"
+  add_foreign_key "pedidos", "eleccions"
+  add_foreign_key "pedidos", "extras"
+  add_foreign_key "pedidos", "promocions"
+  add_foreign_key "pedidos", "tipos"
 end
