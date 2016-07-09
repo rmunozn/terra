@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pizzeria Amore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i>Pizzeria amore</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#one">Portada</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#three">Registrese</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#four">Ordene</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#last">Ubicación</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Pizzeria Amore</h1>
+                <h4>Pizzeria de tus sueños</h4>
+                <hr>
+            </div>
+        </div>
+        
+    </header>
+
+    <section id="two">
+        <div class="container-fluid welcome section-container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-12 welcome-text">
+                    <h3>Bienvenidos a</h3>
+                    <span class="header-text">Pizzeria amore</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis quam at laoreet porta. Ut suscipit erat libero, ut tincidunt mauris lacinia vel. Aliquam ultrices dolor sit amet neque faucibus vehicula. Vivamus laoreet lorem lacus, a maximus nunc dictum a. Phasellus felis turpis, elementum nec justo id, imperdiet malesuada erat.</p>
+                </div>
+            <div class="col-md-5 col-sm-5 col-xs-12 welcome-image">
+                <div class="col-md-6 col-sm-12 col-xs-6 pull-left"> <%=image_tag("welcome1.png")%></div>
+                <div class="col-md-6 pull-left col-xs-6 welcome2"> <img src="welcome2.png"/> </div>
+            </div>
+            </div>
+        </div>
+    </section>
+ 
+    <footer id="footer">
+        <div class="container-fluid">
+        </div>
+    </footer>
+
+  </body>
+</html>
