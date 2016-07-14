@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pizzeria Amore</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Codeply">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-  </head>
-  <body>
+   <body>
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -24,19 +15,19 @@
             <div class="navbar-collapse collapse" id="bs-navbar">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="page-scroll" href="#one">Portada</a>
+                        <a  href="#one">Portada</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#two">Sobre nosotros</a>
+                        <a  href="#two">Sobre nosotros</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#three">Registrese</a>
+                        <a  href="#modal">Registrese</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#four">Ordene</a>
+                        <a  href="#four">Ordene</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#last">Ubicación</a>
+                        <a  href="#last">Ubicación</a>
                     </li>
                 </ul>
 
@@ -53,7 +44,7 @@
         </div>
         
     </header>
-
+   
     <section id="two">
         <div class="container-fluid welcome section-container">
             <div class="row">
@@ -64,7 +55,7 @@
                 </div>
             <div class="col-md-5 col-sm-5 col-xs-12 welcome-image">
                 <div class="col-md-6 col-sm-12 col-xs-6 pull-left"> <%=image_tag("welcome1.png")%></div>
-                <div class="col-md-6 pull-left col-xs-6 welcome2"> <img src="welcome2.png"/> </div>
+                <div class="col-md-6 pull-left col-xs-6 welcome2"> <%=image_tag("welcome2.png")%> </div>
             </div>
             </div>
         </div>
