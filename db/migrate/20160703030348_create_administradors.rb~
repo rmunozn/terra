@@ -1,8 +1,0 @@
-class CreateAdministradors < ActiveRecord::Migration
-  def change
-    create_table :administradors do |t|
-
-      t.timestamps null: false
-    end
-  end
-end

@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :tests
   get 'bienvenido/index'
-  get 'registro', to: 'registro#index' 
+  get 'registro', to: 'registro#index'
+  resources 'registro'
+  get 'bienvenido', to: 'bienvenido#index'
+  get 'contactos', to: 'contactos#contacto'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -28,7 +28,7 @@
                         <br>
                         <div class="center-block" id="left">
                             <%= f.label :Rut%>
-                            <div  id="rut">
+                            <div  id="right">
                                 <%= f.text_field :rut %>
                             </div>
                         </div>

@@ -4,4 +4,9 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'style.css';
+
+body {
+background-image: image-url('chef.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+}

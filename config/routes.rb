@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'bienvenido/index'
-  get 'registro', to: 'registro#index' 
+  get 'registro', to: 'registro#index'
+  post 'registro' => "registro#create"
+  get 'bienvenido', to: 'bienvenido#index'
+  get 'contactos', to: 'contactos#contacto'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

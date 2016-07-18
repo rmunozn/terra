@@ -1,39 +1,15 @@
 <!DOCTYPE html>
 <html>
-   <body>
-    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i>Pizzeria amore</a>
-            </div>
-            <div class="navbar-collapse collapse" id="bs-navbar">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a  href="#one">Portada</a>
-                    </li>
-                    <li>
-                        <a  href="#two">Sobre nosotros</a>
-                    </li>
-                    <li>
-                        <a  href="#modal">Registrese</a>
-                    </li>
-                    <li>
-                        <a  href="#four">Ordene</a>
-                    </li>
-                    <li>
-                        <a  href="#last">Ubicación</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
+  <head>
+    <meta charset="utf-8">
+    <title>Pizzeria Amore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+  </head>
+  <body>
     <header id="first">
         <div class="header-content">
             <div class="inner">

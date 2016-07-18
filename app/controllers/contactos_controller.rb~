@@ -1,0 +1,4 @@
+class ContactosController < ApplicationController
+  def contactos
+  end
+end
